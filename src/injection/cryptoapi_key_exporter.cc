@@ -87,7 +87,7 @@ void ServerLoop(CustomServer& server) {
 #define PRIVATEKEYBLOB_SIZE 0x254
 int StartMailSlot() {
   // Create the mailslot
-  LPCSTR slot_name = "\\\\.\\mailslot\\KeyReaperServer";
+  LPCSTR slot_name = "\\\\.\\mailslot\\KeyExtractionServer";
   HANDLE hMailslot = CreateMailslotA(slot_name, sizeof(HCRYPTKEY), MAILSLOT_WAIT_FOREVER, NULL);
   if (hMailslot == INVALID_HANDLE_VALUE) {
     std::cerr << "Failed to create mailslot. The server might already be running. \nError: " << GetLastError() << std::endl;
