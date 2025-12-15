@@ -1,5 +1,5 @@
-#ifndef KEYREAPER_NTDLL_H
-#define KEYREAPER_NTDLL_H
+#ifndef CUSTOM_NTDLL_H
+#define CUSTOM_NTDLL_H
 
 
 ///////////////////////////////////
